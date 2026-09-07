@@ -450,7 +450,7 @@
       <div class="install reveal">
         <div class="install-inner">
           <h3>One command. That's it.</h3>
-          <p class="sub">macOS · Apple Silicon · pick Homebrew or curl · requires Input Monitoring + Microphone permission</p>
+          <p class="sub">macOS · Apple Silicon · pick Homebrew or curl · requires Input Monitoring, Accessibility, and Microphone permission</p>
 
           <div class="term">
             <div class="bar"><i class="r"></i><i class="y"></i><i class="g"></i><span>homebrew</span></div>
@@ -472,6 +472,13 @@
             Homebrew pulls in the <b>llama.cpp</b> engine automatically. First launch downloads
             the speech model (a few minutes) — the menu-bar duck shows the progress.
             Update later with <b>brew upgrade --cask yappr</b>.
+          </p>
+
+          <p class="alt">
+            Grant all three permissions in System Settings &gt; Privacy &amp; Security:
+            <b>Input Monitoring</b> to read the hotkey, <b>Microphone</b> to record,
+            and <b>Accessibility</b> to paste into the app you're typing in. Without
+            Accessibility, dictation transcribes but nothing is pasted.
           </p>
         </div>
       </div>
